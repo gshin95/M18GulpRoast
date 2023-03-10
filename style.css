@@ -1,45 +1,46 @@
+@charset "UTF-8";
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
-
-h1{
-font-family: 'Poppins', sans-serif;
+h1 {
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
 }
 
-p{
-font-family: 'Lato', sans-serif;
+p {
+  font-family: "Lato", sans-serif;
 }
 
-.header{
-  background-color:#082B59;
+.header {
+  background-color: #082B59;
 }
 
-.footer{
-  background-color:#082B59;
+.footer {
+  background-color: #082B59;
 }
 
-.logo{
-  width:120px;
-  display:block;
-/*   display:inline; */
-/*   text-align:center; */
+.logo {
+  width: 120px;
+  display: block;
+  /*   display:inline; */
+  /*   text-align:center; */
   margin: 0 auto 0 auto;
-/*   margin: 0 auto; also means both up and down and left and right are 0 */
+  /*   margin: 0 auto; also means both up and down and left and right are 0 */
 }
 
-a{
-  color:white;
-  font-family: 'Lato', sans-serif;
-  text-decoration:none;
+a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
 }
 
-.navigation{
+.navigation {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
 
-.navigation > div{
-/*   background-color: #00000; */
+.navigation > div {
+  /*   background-color: #00000; */
   width: 120px;
   margin: 10px 0;
   text-align: center;
@@ -47,130 +48,126 @@ a{
   font-size: 14px;
 }
 
-.fa-solid{
-  color:white;
-  margin-right:5px;
+.fa-solid {
+  color: white;
+  margin-right: 5px;
 }
 
-.divider{
-  margin-top:5px;
-  height:10px;
-  width:100%;
-  background-color:#D98555;
-/*   you can also do ‘border: 5px solid #d98555;’ on the divider class */
-}
-
-.card{
-  background-color:#59331D;
-  width:300px;
-  border-radius:25px;
-}
-
-.cardimg{
+.divider {
+  margin-top: 5px;
+  height: 10px;
   width: 100%;
-  border-radius:25px 25px 0 0;
+  background-color: #D98555;
+  /*   you can also do ‘border: 5px solid #d98555;’ on the divider class */
 }
 
-.card p{
-  color:white;
-  margin:15px;
+.card {
+  background-color: #59331D;
+  width: 300px;
+  border-radius: 25px;
 }
 
-.container{
-  display:flex;
-  justify-content:space-between;
-  gap:40px;
-  max-width:1000px;
-  margin:0px auto;   
-}
-
-.map{
-  color:#D98555;
-}
-
-.button{
-  background-color:#59331D;
-  color:white;
-  font-size:18px;
-  width:130px;
-  height:60px;
-  border-radius:10px;
-  border:none;
-}
-/* it'll still work without the dot in front of 'button' because ‘button’ would refer to all button elements, ‘.button’ refers to elements with the ‘button’ class */
-
-.bottom{
-  text-align:center;
-  color:white;
-}
-.gap{
-  margin-top:5px;
-  height:10px;
-  width:100%;
-  background-color:white;
-}
-
-  
-  .card{
-    width:100%;
-  }
-  
-  button{
-    width:100%;
-  }
-  
-  h1{
-    text-align:center;
-    font-size:32px;
-  }
-  
-  p{
-    text-align:center;
-    font-size:14px;
-  }
-  /*   body {
-    background-color: lightgreen;
-  }
- 
-  p{
-    color:pink;
-  } */
-
-}
-  
-@media screen and (max-width: 600px) {
-.mobileimg{
-  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oAJ-mCT-HQEvmnVd95POZWWHYM4KLsGaqi_BJ2l9VETE8s0ROFcKP17efdzh2fh3GF8&usqp=CAU");
-  height: 300px;
+.cardimg {
+  width: 100%;
   border-radius: 25px 25px 0 0;
- background-position: center bottom; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
-  
-  .cardimg{
-    display:none;
-  }
-  
-  .container{
-  display:flex;
-  flex-direction: column;
-  justify-content:space-between;
-  gap:40px;
-  max-width:1000px;
-  margin:0px auto;   
+
+.card p {
+  color: white;
+  margin: 15px;
 }
-  .card{
-    width:100%;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.map {
+  color: #D98555;
+}
+
+.button {
+  background-color: #59331D;
+  color: white;
+  font-size: 18px;
+  width: 130px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* it'll still work without the dot in front of 'button' because ‘button’ would refer to all button elements, ‘.button’ refers to elements with the ‘button’ class */
+.bottom {
+  text-align: center;
+  color: white;
+}
+
+.gap {
+  margin-top: 5px;
+  height: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.card {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/*   body {
+  background-color: lightgreen;
+}
+
+p{
+  color:pink;
+} */
+@media screen and (max-width: 600px) {
+  .mobileimg {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oAJ-mCT-HQEvmnVd95POZWWHYM4KLsGaqi_BJ2l9VETE8s0ROFcKP17efdzh2fh3GF8&usqp=CAU");
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+    background-position: center bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
   }
-  button{
-    width:100%;
+  .cardimg {
+    display: none;
   }
-  h1{
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+  .card {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  h1 {
     text-align: center;
     font-size: 32px;
   }
-  p{
+  p {
     text-align: center;
     font-size: 14px;
   }
@@ -181,3 +178,17 @@ a{
     color: pink;
   } */
 }
+h2 {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: red;
+  background-color: black;
+}
+
+h1 {
+  margin: 200px;
+  padding: 200px;
+}/*# sourceMappingURL=style.css.map */
